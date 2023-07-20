@@ -1,10 +1,10 @@
 import * as React from 'react';
 import { styled } from '@mui/system';
 import Badge, { badgeClasses } from '@mui/base/Badge';
-import MailIcon from '@mui/icons-material/Mail';
 
+import NotificationsIcon from '@mui/icons-material/Notifications';
 
-function notificationsLabel(count) {
+function notificationsLabel2(count) {
   if (count === 0) {
     return 'no notifications';
   }
@@ -14,26 +14,26 @@ function notificationsLabel(count) {
   return `${count} notifications`;
 }
 
-export default function AccessibleBadges() {
+export default function AccessibleBadges2  ()  {
   return (
-    <div aria-label={notificationsLabel(100)}>
-      <StyledBadge badgeContent={100}>
-        <MailIcon />
-      </StyledBadge>
+    <div aria-label={notificationsLabel2(100)}>
+      <BellBadge badgeContent={100}>
+        <NotificationsIcon />
+      </BellBadge>
     </div>
   );
-}
+};
 
-const blue = {
+const blueForBell = {
   500: '#007FFF',
 };
 
-const grey = {
+const greyForBell = {
   300: '#afb8c1',
   900: '#24292f',
 };
 
-const StyledBadge = styled(Badge)(
+const BellBadge = styled(Badge)(
   ({ theme }) => `
   box-sizing: border-box;
   margin: 0;
@@ -60,8 +60,8 @@ const StyledBadge = styled(Badge)(
     white-space: nowrap;
     text-align: center;
     border-radius: 12px;
-    background: ${blue[500]};
-    box-shadow: 0px 4px 6px ${theme.palette.mode === 'dark' ? grey[900] : grey[300]};
+    background: ${blueForBell[500]};
+    box-shadow: 0px 4px 6px ${theme.palette.mode === 'dark' ? greyForBell[900] : greyForBell[300]};
     transform: translate(50%, -50%);
     transform-origin: 100% 0; 
   }

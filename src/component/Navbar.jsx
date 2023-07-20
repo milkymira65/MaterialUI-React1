@@ -2,10 +2,9 @@ import { AppBar ,Box,Toolbar, Typography } from '@mui/material'
 import React from 'react'
 import styled from 'styled-components'
 import UnstyledInputBasic from "./inputSarch-fornav"
-import Badge from '@mui/base/Badge';
-import MailIcon from '@mui/icons-material/Mail';
-// import AccessibleBadges from "./mail-fornav"
 
+import AccessibleBadges from "./mail-fornav"
+import AccessibleBadges2 from "./notificationbell"
 
 const StyledToolbar = styled(Toolbar)({
   display:"flex",
@@ -36,10 +35,11 @@ MILKY MIRA
   
      <UnstyledInputBasic/>
   
-       <Icons>
-       <Badge badgeContent={4}  >
-  <MailIcon/>
-</Badge>
+      <Icons>
+    
+  <AccessibleBadges/>
+<AccessibleBadges2/>
+ 
        </Icons>
     </StyledToolbar>
      
