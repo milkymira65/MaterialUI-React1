@@ -14,7 +14,7 @@ function notificationsLabel2(count) {
   return `${count} notifications`;
 }
 
-export default function AccessibleBadges2  ()  {
+export default function AccessibleBadges3  ()  {
   return (
     <div aria-label={notificationsLabel2(100)}>
       <BellBadge badgeContent={100}>
@@ -61,7 +61,7 @@ const BellBadge = styled(Badge)(
     text-align: center;
     border-radius: 12px;
     background: ${blueForBell[500]};
-    box-shadow: 0px 4px 6px ${theme.palette.mode === 'dark' ? greyForBell[900] : greyForBell[300]};
+    box-shadow: 0px 2px 5px ${theme.palette.mode === 'dark' ? greyForBell[900] : greyForBell[300]};
     transform: translate(50%, -50%);
     transform-origin: 100% 0; 
   }
