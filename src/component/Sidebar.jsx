@@ -7,7 +7,8 @@ import ModeNightIcon from '@mui/icons-material/ModeNight';
 
 const Sidebar = () => {
   return (
-    <Box   bgcolor="skyblue" flex={1} p={2}  sx={{display:{xs:"none",sm:"block" }}}>
+    <Box   flex={1} p={2}  sx={{display:{xs:"none",sm:"block" }}}>
+     <Box  position="fixed">
       <List>
 <ListItem  disablePadding  >
 <ListItemButton component="a" href="#home" >
@@ -88,11 +89,9 @@ const Sidebar = () => {
 </ListItemButton> 
 </ListItem>
 
-
-
-
-
       </List>
+      </Box>
+     
     </Box>
   )
 }
