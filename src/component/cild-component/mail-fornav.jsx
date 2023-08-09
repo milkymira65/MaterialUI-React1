@@ -25,7 +25,7 @@ export default function AccessibleBadges() {
 }
 
 const blue = {
-  500: '#007FFF',
+  500: '#645CAA',
 };
 
 const grey = {
@@ -60,7 +60,7 @@ const StyledBadge = styled(Badge)(
     white-space: nowrap;
     text-align: center;
     border-radius: 12px;
-    background: ${blue[500]};
+    background: #645CAA
     box-shadow: 0px 4px 6px ${theme.palette.mode === 'dark' ? grey[900] : grey[300]};
     transform: translate(50%, -50%);
     transform-origin: 100% 0; 

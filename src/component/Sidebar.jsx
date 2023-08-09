@@ -1,9 +1,9 @@
 import React from 'react'
-import { Box, List, ListItemButton, ListItemIcon, ListItemText , ListItem   ,ArticleIcon } from '@mui/material'
-import { AccountBox, Article, Home, Person, Settings, Storefront } from '@mui/icons-material'
+import { Box, List, ListItemButton, ListItemIcon, ListItemText , ListItem  , Switch} from '@mui/material'
+import { AccountBox, Article, Home, Person, Settings, Storefront  ,ArticleIcon } from '@mui/icons-material'
 
 import GroupIcon from '@mui/icons-material/Group';
-
+import ModeNightIcon from '@mui/icons-material/ModeNight';
 
 const Sidebar = () => {
   return (
@@ -79,7 +79,14 @@ const Sidebar = () => {
 </ListItemButton> 
 </ListItem>
 
-
+<ListItem  disablePadding  >
+<ListItemButton component="a" href="#simple-list" >
+<ListItemIcon>
+<ModeNightIcon/> 
+</ListItemIcon>
+<Switch  />
+</ListItemButton> 
+</ListItem>
 
 
 
