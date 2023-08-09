@@ -15,9 +15,10 @@ import AccountCircle from "@mui/icons-material/AccountCircle";
 import MailIcon from "@mui/icons-material/Mail";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import MoreIcon from "@mui/icons-material/MoreVert";
-import StyledBadge   from "@mui/material"
+import StyledBadge, { Grid }   from "@mui/material"
 import Avatar  from "@mui/material/Avatar"
-
+// import Tooltip from "@mui/material";
+// import handleOpenUserMenu from "@mui/material"
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -178,15 +179,20 @@ export default function PrimarySearchAppBar() {
           >
             MILK MIRA
           </Typography>
-          <Search>
-            <SearchIconWrapper>
-              <SearchIcon />
+
+          <Grid xs display="flex"  md={6} mdOffset={2} >
+          <Search  sx={{ borderRadius: '20px' }}   >
+            <SearchIconWrapper > 
+              <SearchIcon   />
             </SearchIconWrapper>
-            <StyledInputBase
+            <StyledInputBase 
+          
               placeholder="Search…"
               inputProps={{ "aria-label": "search" }}
             />
           </Search>
+            </Grid>
+
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: "none", md: "flex" } }}>
             <IconButton
@@ -207,6 +213,10 @@ export default function PrimarySearchAppBar() {
                 <NotificationsIcon />
               </Badge>
             </IconButton>
+          
+              <IconButton  >
+                <Avatar alt="picture" src="picture/profile-nav.png" />
+              </IconButton>
 
             
             {/* <IconButton
@@ -220,6 +230,8 @@ export default function PrimarySearchAppBar() {
             >
               <AccountCircle />
             </IconButton> */}
+
+
           </Box>
           <Box sx={{ display: { xs: "flex", md: "none" } }}>
             <IconButton
