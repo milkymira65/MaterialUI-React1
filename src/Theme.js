@@ -7,10 +7,24 @@ export const theme = createTheme({
       light: "skyBlue",
     },
     secondary: {
-      main: "#15c630",
+      main: "#4caf50",
     },
     otherColor: {
-      main: "#999",
+      main: "#b388ff",
+    },
+    error: {
+      main: "#f44336",
+    },
+    emojiIcon: {
+      main: "#ffeb3b",
+    },
+
+    purple: {
+      main: "#673ab7",
+    },
+
+    pink: {
+      main: "#f48fb1",
     },
   },
 });
